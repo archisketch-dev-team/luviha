@@ -35,31 +35,29 @@ function submitSendEmail() {
 }
 
 $(document).ready(function () {
-  $('.email').on('input', function () {
+  $('#email').on('input', function () {
     validateEmailOnChange(this)
   })
 })
 
 function validateEmailOnChange(input) {
-  var emailValue = input.value
-  var errorMessageId = input.id + 'Error' // Generate error message ID dynamically
+  var errorMessageId = 'errorMessage'
   var errorMessage = document.getElementById(errorMessageId)
 
-  // Clear previous error message and reset border color
-  errorMessage.textContent = ''
-  input.style.borderColor = ''
-
-  // Simple email validation
-  if (!emailValue) {
-    errorMessage.textContent = 'Please complete this required field.'
+  if (input.value.trim() === '') {
+    input.classList.add('error')
+    errorMessage.innerText = 'Please complete this required field.'
     input.style.borderColor = '#ef6b51'
-    return
-  }
-
-  if (!validateEmail(emailValue)) {
-    errorMessage.textContent = 'Email must be formatted correctly.'
-    input.style.borderColor = '#ef6b51'
-    return
+  } else {
+    if (input.type === 'email' && !isValidEmail(input.value)) {
+      input.classList.add('error')
+      errorMessage.innerText = 'Email must be formatted correctly.'
+      input.style.borderColor = '#ef6b51'
+    } else {
+      input.classList.remove('error')
+      errorMessage.innerText = ''
+      input.style.borderColor = 'inherit'
+    }
   }
 }
 

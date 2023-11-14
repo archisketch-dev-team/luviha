@@ -38,7 +38,7 @@ function handleInputChange(input) {
   if (input.value.trim() === '') {
     input.classList.add('error')
     errorMessage.innerText = 'Please complete this required field.'
-    input.style.borderColor = 'red'
+    input.style.borderColor = '#ef6b51'
   } else {
     input.classList.remove('error')
     errorMessage.innerText = ''
@@ -47,7 +47,7 @@ function handleInputChange(input) {
     if (input.type === 'email' && !isValidEmail(input.value)) {
       input.classList.add('error')
       errorMessage.innerText = 'Email must be formatted correctly.'
-      input.style.borderColor = 'red'
+      input.style.borderColor = '#ef6b51'
     }
   }
 }
