@@ -102,6 +102,7 @@ div .softek-faq {
 .softek-faq-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -151,7 +152,7 @@ div .softek-faq {
   height: 18px;
   flex-shrink: 0;
   margin-left: 32px;
-  transition: transform 0.2s ease-out;
+  transition: transform 0.3s ease-out;
 }
 .softek-faq-icon::before {
   content: '';
@@ -161,7 +162,7 @@ div .softek-faq {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: opacity 0.2s ease-out;
+  transition: opacity 0.3s ease-out;
   background: #ff6033;
 }
 .softek-faq-icon:after {
@@ -172,6 +173,7 @@ div .softek-faq {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  transition: opacity 0.3s ease-out;
   background: #ff6033;
 }
 

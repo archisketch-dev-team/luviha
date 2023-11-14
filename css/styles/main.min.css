@@ -5672,3 +5672,33 @@ form textarea {
   transition: all 0.3s ease-in-out !important;
   -webkit-transition: all 0.3s ease-in-out !important;
 }
+/* ADD CSS Footer */
+.footer_button_input_sendMail {
+  border-radius: 4px;
+  display: inline-block;
+  padding: 11px 30px;
+  background: transparent url(//f.hubspotusercontent30.net/hubfs/19947038/raw_assets/public/softek/images/sub-button.png) no-repeat top right !important;
+  color: transparent;
+  border-color: transparent;
+}
+.footer_input_sendMail:focus {
+  outline: none;
+}
+
+.footer_input_sendMail {
+  padding: 0 20px;
+  color: #696969;
+  border-radius: 4px;
+  width: 100%;
+  background: #fafafa;
+  font-size: 0.875rem;
+}
+#hs_form_target_footer_footer_subscribe_form {
+  display: flex;
+  height: 52px;
+}
+.error-message {
+  color: #ef6b51;
+  margin-top: 0.35rem;
+  font-size: 0.875rem;
+}

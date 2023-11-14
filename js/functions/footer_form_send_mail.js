@@ -49,7 +49,7 @@ function validateEmailOnChange(input) {
     errorMessage.innerText = 'Please complete this required field.'
     input.style.borderColor = '#ef6b51'
   } else {
-    if (input.type === 'email' && !isValidEmail(input.value)) {
+    if (input.type === 'email' && !validateEmail(input.value)) {
       input.classList.add('error')
       errorMessage.innerText = 'Email must be formatted correctly.'
       input.style.borderColor = '#ef6b51'
