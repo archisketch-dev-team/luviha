@@ -5,7 +5,6 @@
     <title>Home</title>
 
     <link rel="shortcut icon" href="//19947038.fs1.hubspotusercontent-na1.net/hubfs/19947038/raw_assets/public/softek/images/softek-favicon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 
     <meta name="description" content="" />
 
@@ -67,8 +66,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/module_47377589670_menu-section.min.css" />
     <link rel="stylesheet" href="css/module_-2712622_Site_Search_Input.min.css" />
-    <link rel="stylesheet" href="css/menu.css" />
-
     <style>
       @font-face {
         font-family: 'Nunito';
@@ -294,23 +291,28 @@
       <div data-global-resource-path="softek/templates/partials/header.html">
         <header class="header">
           <a href="#main-content" class="header__skip">Skip to content</a>
-          <div id="header-container"></div>
-          <script>
-            fetch('header.html')
-              .then((response) => response.text())
-              .then((data) => {
-                document.getElementById('header-container').innerHTML = data
-              })
-              .catch((error) => console.error('Error fetching header.html:', error))
-          </script>
+
           <div class="container-fluid content-wrapper">
             <div class="row-fluid-wrapper">
               <div class="row-fluid">
-                <div class="span12 widget-span widget-type-cell" data-widget-type="cell" data-x="0" data-w="12"></div>
+                <div class="span12 widget-span widget-type-cell" style="" data-widget-type="cell" data-x="0" data-w="12"></div>
                 <!--end widget-span -->
               </div>
             </div>
           </div>
+
+          <div id="header-container"></div>
+
+          <script>
+            var xhr = new XMLHttpRequest()
+            xhr.open('GET', 'header.html', true)
+            xhr.onreadystatechange = function () {
+              if (xhr.readyState === 4 && xhr.status === 200) {
+                document.getElementById('header-container').innerHTML = xhr.responseText
+              }
+            }
+            xhr.send()
+          </script>
 
           <div class="container-fluid content-wrapper">
             <div class="row-fluid-wrapper">
@@ -1740,12 +1742,12 @@
               // Insert the content into the footer-container div
               document.getElementById('footer-container').innerHTML = data
             })
-            .catch((error) => console.error('Error fetching header.html:', error))
+            .catch((error) => console.error('Error fetching footer.html:', error))
         </script>
       </div>
     </div>
 
-    <script defer src="js/functions/footer_form_send_mail.js"></script>
+    <!-- HubSpot performance collection script -->
     <script defer src="js/embed.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -1762,8 +1764,7 @@
       <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
 
-    <script data-hs-allowed="true" src="js/v2.js"></script>
-    <script rel="stylesheet" href="css/themify-icons.css" />
+    <!-- <script data-hs-allowed="true" src="js/v2.js"></script> -->
 
     <div class="bsnav-mobile">
       <div class="bsnav-mobile-overlay"></div>
