@@ -1,3 +1,7 @@
+function validateEmail(email) {
+  return /\S+@\S+\.\S+/.test(email)
+}
+
 function submitSendEmail() {
   var emailInput = document.getElementById('email')
   var emailValue = emailInput.value
@@ -35,33 +39,28 @@ function submitSendEmail() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var emailInput = document.getElementById('email')
-  emailInput.addEventListener('input', function () {
+  function validateEmailOnChange(input) {
+    var errorMessageId = 'errorMessage'
+    var errorMessage = document.getElementById(errorMessageId)
+
+    if (input.value.trim() === '') {
+      input.classList.add('error')
+      errorMessage.innerText = 'Please complete this required field.'
+      input.style.borderColor = '#ef6b51'
+    } else {
+      if (input.type === 'email' && !validateEmail(input.value)) {
+        input.classList.add('error')
+        errorMessage.innerText = 'Email must be formatted correctly.'
+        input.style.borderColor = '#ef6b51'
+      } else {
+        input.classList.remove('error')
+        errorMessage.innerText = ''
+        input.style.borderColor = 'inherit'
+      }
+    }
+  }
+
+  document.getElementById('email')?.addEventListener('input', function () {
     validateEmailOnChange(this)
   })
 })
-
-function validateEmailOnChange(input) {
-  var errorMessageId = 'errorMessage'
-  var errorMessage = document.getElementById(errorMessageId)
-
-  if (input.value.trim() === '') {
-    input.classList.add('error')
-    errorMessage.innerText = 'Please complete this required field.'
-    input.style.borderColor = '#ef6b51'
-  } else {
-    if (input.type === 'email' && !validateEmail(input.value)) {
-      input.classList.add('error')
-      errorMessage.innerText = 'Email must be formatted correctly.'
-      input.style.borderColor = '#ef6b51'
-    } else {
-      input.classList.remove('error')
-      errorMessage.innerText = ''
-      input.style.borderColor = 'inherit'
-    }
-  }
-}
-
-function validateEmail(email) {
-  return /\S+@\S+\.\S+/.test(email)
-}
