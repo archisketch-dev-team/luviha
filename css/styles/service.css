@@ -190,11 +190,11 @@
 }
 .service-one-icon-box-parent-one,
 .service-one-icon-box-parent-three {
-  margin: 10px 15px;
+  margin: 0 0px 18px 0;
 }
 .service-one-icon-box-parent-two,
 .service-one-icon-box-parent-four {
-  margin: 10px 15px;
+  margin: 0 0px 18px 0;
 }
 .service-one-text-two {
   padding: 50px 15px;
@@ -233,6 +233,21 @@
   background: #fafafa !important;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  #form-service {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 479px) {
+  #form-service {
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #form-service {
+    padding: 0 15px;
+  }
+}
 .form-control:focus,
 #message:focus {
   box-shadow: inherit !important;
@@ -266,11 +281,11 @@ input[type='email']:focus {
   outline: 0 !important;
   border-color: #696969 !important;
 }
-.btn-success {
+#btn-success {
   background: linear-gradient(to right, #ff3834 0%, #ff7133 100%) !important;
   border-color: inherit !important;
   border-radius: 4px;
-  width: 178px;
+  width: auto;
   height: 55px;
   line-height: 55px;
   border: 0;
@@ -280,12 +295,15 @@ input[type='email']:focus {
   letter-spacing: 0;
   padding: 0 33px;
 }
-.btn:hover {
+#btn-success:hover {
   box-shadow: 0px 11px 14px -7px rgb(0 0 0 / 25%);
   transform: translateY(-5px);
   -webkit-transform: translateY(-5px);
+  background-color: rgba(65, 65, 65, 1);
+  border-color: #414141;
+  color: #fff;
 }
-.btn-success:focus {
+#btn-success:focus {
   box-shadow: inherit !important;
 }
 .error-message {

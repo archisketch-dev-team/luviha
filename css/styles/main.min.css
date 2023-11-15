@@ -2921,7 +2921,7 @@ form textarea {
   right: 0;
   height: 106px;
   width: 94px;
-  background: url('../image/price-tag.png') no-repeat 0 0;
+  background: url('/image/price-tag.png') no-repeat 0 0;
   padding: 5px 0 0 40px;
 }
 .softek-pricing-table > .holder > .spotlight-tag > .spotlight-tag-text {
