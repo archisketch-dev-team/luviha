@@ -1698,23 +1698,24 @@
             .then((data) => {
               // Insert the content into the footer-container div
               document.getElementById('footer-container').innerHTML = data
+              let scripTag = document.createElement('script')
+              scripTag.src = 'js/functions/footer_form_send_mail.js'
+              document.body.appendChild(scripTag)
             })
             .catch((error) => console.error('Error fetching footer.html:', error))
         </script>
       </div>
     </div>
 
-    <script defer src="js/functions/footer_form_send_mail.js"></script>
-
     <script defer src="js/embed.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.matchHeight.min.js"></script>
-    <script src="js/bsnav.min.js"></script>
-    <script src="js/main.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.matchHeight.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bsnav.min.js"></script>
+    <script src="js/main.min.js"></script>
 
     <script src="js/module_47377589670_menu-section.min.js"></script>
     <script src="js/module_-2712622_Site_Search_Input.min.js"></script>
