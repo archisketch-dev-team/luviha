@@ -276,10 +276,10 @@
   font-size: 0.875rem;
 }
 
-input[type='text']:focus,
-input[type='email']:focus {
+#form-service input[type='text']:focus,
+#form-service input[type='email']:focus {
   outline: 0 !important;
-  border-color: #696969 !important;
+  border-color: #696969;
 }
 #btn-success {
   background: linear-gradient(to right, #ff3834 0%, #ff7133 100%) !important;

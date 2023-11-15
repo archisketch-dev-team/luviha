@@ -52,6 +52,9 @@ function handleInputChange(input) {
     errorMessage.innerText = 'Please complete this required field.'
     input.style.borderColor = 'red'
   } else {
+    input.classList.remove('error')
+    errorMessage.innerText = ''
+    input.style.borderColor = 'inherit'
     if (input.type === 'email' && !isValidEmail(input.value)) {
       input.classList.add('error')
       errorMessage.innerText = 'Email must be formatted correctly.'
@@ -62,9 +65,6 @@ function handleInputChange(input) {
       errorMessage.innerText = 'Invalid phone number'
       input.style.borderColor = 'red'
     }
-    input.classList.remove('error')
-    errorMessage.innerText = ''
-    input.style.borderColor = 'inherit'
   }
 }
 
