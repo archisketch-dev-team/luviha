@@ -25,9 +25,13 @@ function submitForm() {
   }
 }
 
-$(document).ready(function () {
-  $('#yourMail, #firstName, #lastName, #message').on('input', function () {
-    handleInputChange(this)
+document.addEventListener('DOMContentLoaded', function () {
+  var inputElements = document.querySelectorAll('#yourMail, #firstName, #lastName, #message')
+
+  inputElements.forEach(function (input) {
+    input.addEventListener('input', function () {
+      handleInputChange(this)
+    })
   })
 })
 

@@ -34,8 +34,9 @@ function submitSendEmail() {
   formTarget.appendChild(successMessage)
 }
 
-$(document).ready(function () {
-  $('#email').on('input', function () {
+document.addEventListener('DOMContentLoaded', function () {
+  var emailInput = document.getElementById('email')
+  emailInput.addEventListener('input', function () {
     validateEmailOnChange(this)
   })
 })

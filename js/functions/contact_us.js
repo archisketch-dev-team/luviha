@@ -37,9 +37,13 @@ function submitForm() {
   }
 }
 
-$(document).ready(function () {
-  $('#firstName, #yourMail, #phoneNo, #company, #message').on('input', function () {
-    handleInputChange(this)
+document.addEventListener('DOMContentLoaded', function () {
+  var inputElements = document.querySelectorAll('#firstName, #yourMail, #phoneNo, #company, #message')
+
+  inputElements.forEach(function (input) {
+    input.addEventListener('input', function () {
+      handleInputChange(this)
+    })
   })
 })
 
