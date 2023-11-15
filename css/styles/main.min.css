@@ -5673,30 +5673,41 @@ form textarea {
   -webkit-transition: all 0.3s ease-in-out !important;
 }
 /* ADD CSS Footer */
-.footer_button_input_sendMail {
-  border-radius: 4px;
-  display: inline-block;
-  padding: 11px 30px;
-  background: transparent url(//f.hubspotusercontent30.net/hubfs/19947038/raw_assets/public/softek/images/sub-button.png) no-repeat top right !important;
-  color: transparent;
-  border-color: transparent;
+#hs_form_target_footer_subscribe_form {
+  position: relative;
 }
-.footer_input_sendMail:focus {
-  outline: none;
-}
-
 .footer_input_sendMail {
-  padding: 0 20px;
+  position: relative;
+  height: 52px;
+  padding: 11px 20px;
   color: #696969;
   border-radius: 4px;
-  width: 100%;
   background: #fafafa;
   font-size: 0.875rem;
+  border: 0;
 }
-#hs_form_target_footer_footer_subscribe_form {
-  display: flex;
+
+.footer_input_sendMail:focus {
+  outline: 0;
+}
+.footer_button_input_sendMail {
+  position: absolute;
+  right: 0px;
   height: 52px;
+  border-radius: 4px;
+  display: inline-block;
+  letter-spacing: 0;
+  line-height: 30px;
+  font-size: 0px;
+  letter-spacing: 0;
+  border: 0;
+  background: transparent url(//f.hubspotusercontent30.net/hubfs/19947038/raw_assets/public/softek/images/sub-button.png) no-repeat top right !important;
+  color: transparent;
+  transition: all 0.4s ease-in-out !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  font-weight: 700;
 }
+
 .error-message {
   color: #ef6b51;
   margin-top: 0.35rem;

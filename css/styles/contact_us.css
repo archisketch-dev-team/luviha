@@ -163,3 +163,28 @@ input[type='email']:focus {
 .row-fluid-wrapper {
   margin: -15px;
 }
+.error-message {
+  color: #ef6b51 !important;
+  margin-top: 0.35rem;
+  font-size: 0.875rem;
+}
+#btn-success {
+  position: relative;
+  background: linear-gradient(to right, #ff3834 0%, #ff7133 100%);
+  border-radius: 4px;
+  width: auto;
+  height: 55px;
+  line-height: 30px;
+  border: 0;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0;
+  display: block;
+  margin: 0 auto;
+}
+#btn-success:focus {
+  background-color: rgba(65, 65, 65, 1);
+  border-color: #414141;
+  color: #fff;
+}

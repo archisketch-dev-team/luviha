@@ -232,16 +232,22 @@
 .form-control {
   background: #fafafa !important;
 }
-#message.form-control:focus {
-  border-color: #696969;
-}
-.form-control:focus {
+
+.form-control:focus,
+#message:focus {
   box-shadow: inherit !important;
   border-color: #696969;
 }
 
-input[type='text'],
-input[type='email'] {
+#form-service textarea {
+  resize: none;
+  height: 120px;
+  padding: 12px 20px;
+}
+
+#form-service input[type='text'],
+#form-service input[type='email'] {
+  padding: 0 20px;
   border: 1px solid #d0dcec;
   background: #fafafa !important;
   border-radius: 4px;

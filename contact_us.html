@@ -5,6 +5,7 @@
     <title>Contact Us</title>
 
     <link rel="shortcut icon" href="//19947038.fs1.hubspotusercontent-na1.net/hubfs/19947038/raw_assets/public/softek/images/softek-favicon.png" />
+    <link rel="stylesheet" href="css/fonts.css" />
 
     <meta name="description" content="" />
 
@@ -67,50 +68,6 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/module_47377589670_menu-section.min.css" />
     <link rel="stylesheet" href="css/module_-2712622_Site_Search_Input.min.css" />
-    <style>
-      @font-face {
-        font-family: 'Nunito';
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        src: url('/_hcms/googlefonts/Nunito/regular.woff2') format('woff2'), url('/_hcms/googlefonts/Nunito/regular.woff') format('woff');
-      }
-      @font-face {
-        font-family: 'Nunito';
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        src: url('/_hcms/googlefonts/Nunito/regular.woff2') format('woff2'), url('/_hcms/googlefonts/Nunito/regular.woff') format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-weight: 500;
-        font-style: normal;
-        font-display: swap;
-        src: url('/_hcms/googlefonts/Poppins/500.woff2') format('woff2'), url('/_hcms/googlefonts/Poppins/500.woff') format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-weight: 600;
-        font-style: normal;
-        font-display: swap;
-        src: url('/_hcms/googlefonts/Poppins/600.woff2') format('woff2'), url('/_hcms/googlefonts/Poppins/600.woff') format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-weight: 400;
-        font-style: normal;
-        font-display: swap;
-        src: url('/_hcms/googlefonts/Poppins/regular.woff2') format('woff2'), url('/_hcms/googlefonts/Poppins/regular.woff') format('woff');
-      }
-      @font-face {
-        font-family: 'Poppins';
-        font-weight: 700;
-        font-style: normal;
-        font-display: swap;
-        src: url('/_hcms/googlefonts/Poppins/700.woff2') format('woff2'), url('/_hcms/googlefonts/Poppins/700.woff') format('woff');
-      }
-    </style>
 
     <!-- Editor Styles -->
     <style id="hs_editor_style" type="text/css">
@@ -533,31 +490,31 @@
                                   <form id="form-contact">
                                     <div class="form-row">
                                       <div class="form-group col-md-6">
-                                        <input placeholder="First Name" type="text" class="form-control" id="firstName" name="firstName" required />
+                                        <input placeholder="First Name*" type="text" class="form-control" id="firstName" name="firstName" required />
                                         <div class="error-message" id="firstNameError"></div>
                                       </div>
 
                                       <div class="form-group col-md-6">
-                                        <input placeholder="Your Mail" type="email" class="form-control" id="yourMail" name="yourMail" required />
+                                        <input placeholder="Your Mail*" type="email" class="form-control" id="yourMail" name="yourMail" required />
                                         <div class="error-message" id="yourMailError"></div>
                                       </div>
                                     </div>
 
                                     <div class="form-row">
                                       <div class="form-group col-md-6">
-                                        <input placeholder="Phone No" type="tel" class="form-control" id="phoneNo" name="phoneNo" required />
+                                        <input placeholder="Phone No*" type="tel" class="form-control" id="phoneNo" name="phoneNo" required />
                                         <div class="error-message" id="phoneNoError"></div>
                                       </div>
 
                                       <div class="form-group col-md-6">
-                                        <input placeholder="Company" type="text" class="form-control" id="company" name="company" required />
+                                        <input placeholder="Company*" type="text" class="form-control" id="company" name="company" required />
                                         <div class="error-message" id="companyError"></div>
                                       </div>
                                     </div>
 
                                     <div class="form-group">
                                       <textarea
-                                        placeholder="Message"
+                                        placeholder="Message*"
                                         type="text"
                                         class="form-control"
                                         id="message"
@@ -568,7 +525,7 @@
                                       <div class="error-message" id="messageError"></div>
                                     </div>
 
-                                    <button type="button" class="btn btn-success" onclick="submitForm()">Send Message</button>
+                                    <button type="button" id="btn-success" onclick="submitForm()">Send Message</button>
                                   </form>
                                 </div>
                               </span>
