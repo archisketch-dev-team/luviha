@@ -244,6 +244,11 @@
     <meta name="generator" content="HubSpot" />
   </head>
   <body>
+    <!-- Loading -->
+    <div id="Loading" class="loading-container" style="display: none">
+      <div class="loading-spinner"></div>
+    </div>
+
     <div class="body-wrapper hs-content-id-47607862653 hs-site-page page">
       <div data-global-resource-path="softek/templates/partials/header.html">
         <header class="header">
@@ -311,7 +316,7 @@
                         <nav aria-label="Main menu" class="navigation-primary">
                           <ul class="navbar-nav navbar-mobile mr-0 submenu level-1">
                             <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
-                              <a href="/" class="menu-link nav-link active-item" aria-current="page">Home</a>
+                              <a id="transfer_page" href="/" class="menu-link nav-link active-item" aria-current="page">Home</a>
                             </li>
 
                             <li class="has-submenu menu-item nav-item dropdown hs-skip-lang-url-rewrite">
@@ -324,11 +329,11 @@
 
                               <ul class="navbar-nav navbar-mobile mr-0 submenu level-2">
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
-                                  <a href="/about_us.html" class="menu-link nav-link">About Us</a>
+                                  <a id="transfer_page" href="/about_us.html" class="menu-link nav-link">About Us</a>
                                 </li>
 
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
-                                  <a href="/service.html" class="menu-link nav-link">Service</a>
+                                  <a id="transfer_page" href="/service.html" class="menu-link nav-link">Service</a>
                                 </li>
 
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
@@ -361,7 +366,7 @@
                             </li>
 
                             <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
-                              <a href="/contact_us.html" class="menu-link nav-link">Contact Us</a>
+                              <a id="transfer_page" href="/contact_us.html" class="menu-link nav-link">Contact Us</a>
                             </li>
 
                             <li class="has-submenu menu-item nav-item dropdown hs-skip-lang-url-rewrite">
@@ -1998,11 +2003,17 @@
                       aria-label="Navigation Menu"
                     >
                       <ul role="menu">
-                        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/" role="menuitem" target="_self">Home</a></li>
-                        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/about_us.html" role="menuitem" target="_self">About Us</a></li>
-                        <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="/service.html" role="menuitem" target="_self">Services</a></li>
+                        <li id="homeLink" class="hs-menu-item hs-menu-depth-1" role="none">
+                          <a id="transfer_page" href="/" role="menuitem" target="_self">Home</a>
+                        </li>
                         <li class="hs-menu-item hs-menu-depth-1" role="none">
-                          <a href="/contact_us.html" role="menuitem" target="_self">Contact Us</a>
+                          <a id="transfer_page" href="/about_us.html" role="menuitem" target="_self">About Us</a>
+                        </li>
+                        <li class="hs-menu-item hs-menu-depth-1" role="none">
+                          <a id="transfer_page" href="/service.html" role="menuitem" target="_self">Services</a>
+                        </li>
+                        <li class="hs-menu-item hs-menu-depth-1" role="none">
+                          <a id="transfer_page" href="/contact_us.html" role="menuitem" target="_self">Contact Us</a>
                         </li>
                       </ul>
                     </div>
@@ -2057,6 +2068,7 @@
       </div>
     </div>
 
+    <script src="js/functions/loading.js"></script>
     <script defer src="js/functions/footer_form_send_mail.js"></script>
 
     <script defer src="js/embed.js"></script>
