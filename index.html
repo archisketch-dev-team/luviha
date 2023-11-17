@@ -13,6 +13,18 @@
     <meta property="og:title" content="Home" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:title" content="Home" />
+    <script>
+      function checkLoading() {
+        var removeLoadingElement = document.getElementById('removeLoading')
+        if (document.readyState === 'complete' && document.styleSheets.length > 0) {
+          removeLoadingElement.style.display = 'block'
+        } else {
+          removeLoadingElement.style.display = 'none'
+        }
+      }
+
+      window.addEventListener('load', checkLoading)
+    </script>
 
     <style>
       a.cta_button {
@@ -59,6 +71,7 @@
       }
     </style>
 
+    <link rel="stylesheet" href="css/styles/navbar.css" />
     <link rel="stylesheet" href="css/styles/common.css" />
     <link defer rel="stylesheet" href="css/styles/main.min.css" />
     <link rel="stylesheet" href="css/themify-icons.css" />
@@ -249,7 +262,7 @@
       <div class="loading-spinner"></div>
     </div>
 
-    <div class="body-wrapper hs-content-id-47607862653 hs-site-page page">
+    <div class="body-wrapper hs-content-id-47607862653 hs-site-page page" id="removeLoading">
       <div data-global-resource-path="softek/templates/partials/header.html">
         <header class="header">
           <a href="#main-content" class="header__skip">Skip to content</a>
@@ -261,7 +274,7 @@
               </div>
             </div>
           </div>
-        
+
           <div id="header-container">
             <header class="header__container content-wrapper" id="header-container">
               <div class="header__column">
@@ -301,7 +314,7 @@
                       ></span>
                     </div>
                   </div>
-        
+
                   <div class="header-navigation">
                     <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse justify-content-md-end">
@@ -313,110 +326,110 @@
                         data-hs-cos-type="module"
                       >
                         <nav aria-label="Main menu" class="navigation-primary">
-                          <ul class="navbar-nav navbar-mobile mr-0 submenu level-1">
+                          <ul id="navbar" class="navbar navbar-nav navbar-mobile mr-0 submenu level-1">
                             <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                               <a id="transfer_page" href="/" class="menu-link nav-link active-item" aria-current="page">Home</a>
                             </li>
-        
+
                             <li class="has-submenu menu-item nav-item dropdown hs-skip-lang-url-rewrite">
                               <a href="#" class="menu-link nav-link">Pages</a>
-        
+
                               <input type="checkbox" id="Pages" class="submenu-toggle" />
                               <label class="menu-arrow" for="Pages">
                                 <span class="rt-dropdown-arrow"></span>
                               </label>
-        
+
                               <ul class="navbar-nav navbar-mobile mr-0 submenu level-2">
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a id="transfer_page" href="/about_us.html" class="menu-link nav-link">About Us</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a id="transfer_page" href="/service.html" class="menu-link nav-link">Service</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Team</a>
                                 </li>
                               </ul>
                             </li>
-        
+
                             <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                               <a href="#" class="menu-link nav-link">Landing</a>
                             </li>
-        
+
                             <li class="has-submenu menu-item nav-item dropdown hs-skip-lang-url-rewrite">
                               <a href="#" class="menu-link nav-link">Blog</a>
-        
+
                               <input type="checkbox" id="Blog" class="submenu-toggle" />
                               <label class="menu-arrow" for="Blog">
                                 <span class="rt-dropdown-arrow"></span>
                               </label>
-        
+
                               <ul class="navbar-nav navbar-mobile mr-0 submenu level-2">
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Blog Default</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Blog Details</a>
                                 </li>
                               </ul>
                             </li>
-        
+
                             <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                               <a id="transfer_page" href="/contact_us.html" class="menu-link nav-link">Contact Us</a>
                             </li>
-        
+
                             <li class="has-submenu menu-item nav-item dropdown hs-skip-lang-url-rewrite">
                               <a href="javascript:;" class="menu-link nav-link">System Pages</a>
-        
+
                               <input type="checkbox" id="System Pages" class="submenu-toggle" />
                               <label class="menu-arrow" for="System Pages">
                                 <span class="rt-dropdown-arrow"></span>
                               </label>
-        
+
                               <ul class="navbar-nav navbar-mobile mr-0 submenu level-2">
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Subscriptions Confirmation</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Subscription Preferences</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Backup Unsubscribe</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Membership Login</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Membership Register</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Membership Reset Password Request</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Membership Reset Password</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Search Results</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">Password Prompt</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">500</a>
                                 </li>
-        
+
                                 <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                                   <a href="#" class="menu-link nav-link">404</a>
                                 </li>
@@ -427,7 +440,7 @@
                       </div>
                     </div>
                   </div>
-        
+
                   <div class="rt-search-box2">
                     <div class="container">
                       <i class="search-btn2 ti-search"></i>
@@ -453,9 +466,9 @@
                                         aria-label="Search"
                                         placeholder="Type Your Search"
                                       />
-        
+
                                       <input type="hidden" name="type" value="SITE_PAGE" />
-        
+
                                       <input type="hidden" name="type" value="BLOG_POST" />
                                       <input type="hidden" name="type" value="LISTING_PAGE" />
                                     </form>
@@ -474,7 +487,7 @@
               </div>
             </header>
           </div>
-        
+
           <div class="container-fluid content-wrapper">
             <div class="row-fluid-wrapper">
               <div class="row-fluid">
@@ -483,7 +496,7 @@
               </div>
             </div>
           </div>
-        </header>        
+        </header>
       </div>
 
       <main id="main-content" class="body-container-wrapper">
@@ -1916,11 +1929,11 @@
                       style="max-width: 100%; height: auto"
                     />
                   </div>
-        
+
                   <div class="footer-content">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                   </div>
-        
+
                   <div class="social-icon-wrapper">
                     <div class="social-links">
                       <a href="//19947712.hs-sites.com/en" class="social-links__icon" target="_blank" rel="nofollow">
@@ -1938,7 +1951,7 @@
                             </g></svg
                         ></span>
                       </a>
-        
+
                       <a href="//19947712.hs-sites.com/en" class="social-links__icon" target="_blank" rel="nofollow">
                         <span
                           id="hs_cos_wrapper_footer_"
@@ -1954,7 +1967,7 @@
                             </g></svg
                         ></span>
                       </a>
-        
+
                       <a href="//19947712.hs-sites.com/en" class="social-links__icon" target="_blank" rel="nofollow">
                         <span
                           id="hs_cos_wrapper_footer_"
@@ -1970,7 +1983,6 @@
                             </g></svg
                         ></span>
                       </a>
-        
                       <a href="//19947712.hs-sites.com/en" class="social-links__icon" target="_blank" rel="nofollow">
                         <span
                           id="hs_cos_wrapper_footer_"
@@ -1991,7 +2003,7 @@
                 </div>
                 <div class="span3">
                   <h6>Quick Links</h6>
-        
+
                   <div class="footer-menu">
                     <div
                       id="hs_menu_wrapper_footer_"
@@ -2020,7 +2032,7 @@
                 </div>
                 <div class="span3">
                   <h6>Contact Us</h6>
-        
+
                   <div class="footer-address">
                     <p>121 King St, Melbourne <br />VIC 3000, Australia​</p>
                     <p>Info@example.com</p>
@@ -2029,10 +2041,10 @@
                 </div>
                 <div class="span3">
                   <h6>Subscribe</h6>
-        
+
                   <div class="footer-subscribe-form">
                     <p>Follow our newsletter to stay updated about us.</p>
-        
+
                     <span
                       id="hs_form_target_footer_footer_subscribe_form"
                       class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form"
@@ -2050,7 +2062,7 @@
                 </div>
               </div>
             </div>
-        
+
             <div class="footer-copyright-section">
               <div class="dnd-section">
                 <div class="row-fluid">
@@ -2063,12 +2075,12 @@
               </div>
             </div>
           </footer>
-        </div>        
+        </div>
+      </div>
     </div>
 
     <script src="js/functions/loading.js"></script>
     <script defer src="js/functions/footer_form_send_mail.js"></script>
-
 
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>

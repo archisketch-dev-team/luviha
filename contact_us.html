@@ -14,6 +14,20 @@
     <meta property="og:title" content="Contact Us" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:title" content="Contact Us" />
+    <script>
+      function checkLoading() {
+        var loadingElement = document.getElementById('loading')
+        var removeLoadingElement = document.getElementById('removeLoading')
+
+        if (document.readyState === 'complete' && document.styleSheets.length > 0) {
+          removeLoadingElement.style.display = 'block'
+        } else {
+          removeLoadingElement.style.display = 'none'
+        }
+      }
+
+      window.addEventListener('load', checkLoading)
+    </script>
 
     <style>
       a.cta_button {
@@ -60,6 +74,7 @@
       }
     </style>
 
+    <link rel="stylesheet" href="css/styles/navbar.css" />
     <link rel="stylesheet" href="css/styles/common.css" />
     <link rel="stylesheet" href="css/styles/main.min.css" />
     <link rel="stylesheet" href="css/bsnav.min.css" />
@@ -144,7 +159,7 @@
       <div class="loading-spinner"></div>
     </div>
 
-    <div class="body-wrapper hs-content-id-47607862932 hs-site-page page">
+    <div class="body-wrapper hs-content-id-47607862932 hs-site-page page" id="removeLoading">
       <div data-global-resource-path="softek/templates/partials/header.html">
         <header class="header">
           <a href="#main-content" class="header__skip">Skip to content</a>
@@ -209,7 +224,7 @@
                         data-hs-cos-type="module"
                       >
                         <nav aria-label="Main menu" class="navigation-primary">
-                          <ul class="navbar-nav navbar-mobile mr-0 submenu level-1">
+                          <ul class="navbar navbar-nav navbar-mobile mr-0 submenu level-1">
                             <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                               <a id="transfer_page" href="/" class="menu-link nav-link active-item" aria-current="page">Home</a>
                             </li>
@@ -782,11 +797,11 @@
                       style="max-width: 100%; height: auto"
                     />
                   </div>
-        
+
                   <div class="footer-content">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting</p>
                   </div>
-        
+
                   <div class="social-icon-wrapper">
                     <div class="social-links">
                       <a href="//19947712.hs-sites.com/en" class="social-links__icon" target="_blank" rel="nofollow">
@@ -804,7 +819,7 @@
                             </g></svg
                         ></span>
                       </a>
-        
+
                       <a href="//19947712.hs-sites.com/en" class="social-links__icon" target="_blank" rel="nofollow">
                         <span
                           id="hs_cos_wrapper_footer_"
@@ -820,7 +835,7 @@
                             </g></svg
                         ></span>
                       </a>
-        
+
                       <a href="//19947712.hs-sites.com/en" class="social-links__icon" target="_blank" rel="nofollow">
                         <span
                           id="hs_cos_wrapper_footer_"
@@ -836,7 +851,7 @@
                             </g></svg
                         ></span>
                       </a>
-        
+
                       <a href="//19947712.hs-sites.com/en" class="social-links__icon" target="_blank" rel="nofollow">
                         <span
                           id="hs_cos_wrapper_footer_"
@@ -857,7 +872,7 @@
                 </div>
                 <div class="span3">
                   <h6>Quick Links</h6>
-        
+
                   <div class="footer-menu">
                     <div
                       id="hs_menu_wrapper_footer_"
@@ -886,7 +901,7 @@
                 </div>
                 <div class="span3">
                   <h6>Contact Us</h6>
-        
+
                   <div class="footer-address">
                     <p>121 King St, Melbourne <br />VIC 3000, Australia​</p>
                     <p>Info@example.com</p>
@@ -895,10 +910,10 @@
                 </div>
                 <div class="span3">
                   <h6>Subscribe</h6>
-        
+
                   <div class="footer-subscribe-form">
                     <p>Follow our newsletter to stay updated about us.</p>
-        
+
                     <span
                       id="hs_form_target_footer_footer_subscribe_form"
                       class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_form"
@@ -916,7 +931,7 @@
                 </div>
               </div>
             </div>
-        
+
             <div class="footer-copyright-section">
               <div class="dnd-section">
                 <div class="row-fluid">
@@ -929,7 +944,8 @@
               </div>
             </div>
           </footer>
-        </div>        
+        </div>
+      </div>
     </div>
 
     <script src="js/functions/loading.js"></script>

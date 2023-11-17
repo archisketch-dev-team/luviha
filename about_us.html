@@ -13,6 +13,19 @@
     <meta property="og:title" content="About Us" />
     <meta name="twitter:description" content="" />
     <meta name="twitter:title" content="About Us" />
+    <script>
+      function checkLoading() {
+        var removeLoadingElement = document.getElementById('removeLoading')
+
+        if (document.readyState === 'complete' && document.styleSheets.length > 0) {
+          removeLoadingElement.style.display = 'block'
+        } else {
+          removeLoadingElement.style.display = 'none'
+        }
+      }
+
+      window.addEventListener('load', checkLoading)
+    </script>
 
     <style>
       a.cta_button {
@@ -59,6 +72,7 @@
       }
     </style>
 
+    <link rel="stylesheet" href="css/styles/navbar.css" />
     <link rel="stylesheet" href="css/styles/common.css" />
     <link rel="stylesheet" href="css/styles/main.min.css" />
     <link rel="stylesheet" href="css/styles/about_us.css" />
@@ -184,7 +198,7 @@
       <div class="loading-spinner"></div>
     </div>
 
-    <div class="body-wrapper hs-content-id-47607866224 hs-site-page page">
+    <div class="body-wrapper hs-content-id-47607866224 hs-site-page page" id="removeLoading">
       <div data-global-resource-path="softek/templates/partials/header.html">
         <header class="header">
           <a href="#main-content" class="header__skip">Skip to content</a>
@@ -248,7 +262,7 @@
                         data-hs-cos-type="module"
                       >
                         <nav aria-label="Main menu" class="navigation-primary">
-                          <ul class="navbar-nav navbar-mobile mr-0 submenu level-1">
+                          <ul class="navbar navbar-nav navbar-mobile mr-0 submenu level-1">
                             <li class="no-submenu menu-item nav-item hs-skip-lang-url-rewrite">
                               <a id="transfer_page" href="/" class="menu-link nav-link active-item" aria-current="page">Home</a>
                             </li>
