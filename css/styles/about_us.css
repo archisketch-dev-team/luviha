@@ -86,6 +86,22 @@
   padding: 0;
   margin: 0 0 30px 0;
 }
+/* Team memmber */
+.swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 30px;
+  .rt-professionals-team {
+    width: 263px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 30px;
+  }
+}
 
 div .softek-faq {
   border: 0px none;
@@ -137,6 +153,10 @@ div .softek-faq {
 }
 .softek-faq-description {
   background: #fff;
+  transition: height 0.25s ease-out;
+  overflow: hidden;
+}
+.description_item {
   padding: 15px 20px 15px 20px;
 }
 
@@ -145,14 +165,13 @@ div .softek-faq {
 }
 
 /* add thêm */
-
 .softek-faq-icon {
   position: relative;
   width: 18px;
   height: 18px;
   flex-shrink: 0;
   margin-left: 32px;
-  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: transform 0.2s ease-out;
 }
 .softek-faq-icon::before {
   content: '';
@@ -162,7 +181,7 @@ div .softek-faq {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  transition: opacity 0.2s ease-out;
   background: #ff6033;
 }
 .softek-faq-icon:after {
@@ -179,4 +198,10 @@ div .softek-faq {
 
 .softek-faq-title[aria-expanded='true'] .softek-faq-icon {
   transform: rotate(90deg);
+}
+
+@media screen and (max-width: 480px) {
+  .softek-faq-description {
+    padding: 0 16px;
+  }
 }
