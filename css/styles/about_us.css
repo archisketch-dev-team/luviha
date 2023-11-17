@@ -8,6 +8,9 @@
   -webkit-transition: all 0.3s ease-in-out;
   transform: translate3d(0);
 }
+.faq_title {
+  padding-left: 15px;
+}
 .about-one-text-four-right {
   width: 80%;
 }
