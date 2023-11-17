@@ -8,6 +8,17 @@ function hideLoading() {
   loadingContainer.style.display = 'none'
 }
 
+function checkLoading() {
+  console.log('sss')
+
+  var removeLoadingElement = document.getElementById('removeLoading')
+  if (document.readyState === 'complete' && document.styleSheets.length > 0) {
+    removeLoadingElement.style.display = 'block'
+  } else {
+    removeLoadingElement.style.display = 'none'
+  }
+}
+
 var isLoading = false
 
 function navigateTo(targetPage) {
@@ -39,4 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
       isLoading = false
     }
   })
+
+  window.addEventListener('load', checkLoading)
 })
