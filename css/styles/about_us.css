@@ -95,6 +95,32 @@
     width: 263px;
   }
 }
+@media (max-width: 1139px) and (min-width: 480px) {
+  .swiper-wrapper {
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+  }
+  .rt-professionals-team {
+    width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  .swiper-wrapper {
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+  }
+  .rt-professionals-team {
+    width: 100% !important;
+  }
+}
+
+/* Faq */
+@media screen and (max-width: 480px) {
+  .description_item {
+    padding: 15px 20px 15px 20px;
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .swiper-wrapper {
     display: grid;
@@ -157,8 +183,12 @@ div .softek-faq {
 .softek-faq {
   width: 93%;
 }
-
-/* add thêm */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hs_cos_wrapper {
+    width: auto;
+    padding: 0 15px;
+  }
+}
 .softek-faq-icon {
   position: relative;
   width: 18px;
@@ -192,28 +222,4 @@ div .softek-faq {
 
 .softek-faq-title[aria-expanded='true'] .softek-faq-icon {
   transform: rotate(90deg);
-}
-@media (max-width: 1139px) and (min-width: 480px) {
-  .swiper-wrapper {
-    grid-template-columns: repeat(2, auto);
-    gap: 10px;
-  }
-  .rt-professionals-team {
-    width: 100% !important;
-  }
-}
-@media (max-width: 480px) {
-  .swiper-wrapper {
-    grid-template-columns: repeat(1, auto);
-    gap: 10px;
-  }
-  .rt-professionals-team {
-    width: 100% !important;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .softek-faq-description {
-    padding: 0 16px;
-  }
 }
