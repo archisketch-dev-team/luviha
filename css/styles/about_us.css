@@ -17,9 +17,7 @@
 .about-one-img-left {
   padding-top: 80px;
 }
-.about-one-icon-box-two {
-  margin-top: 107px;
-}
+
 .softek-icon-box-wrapper.icon-box-about-one {
   margin: 0;
   padding: 30px 15px;
@@ -33,6 +31,12 @@
   transition: background 0.4s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   background: #fff;
 }
+@media screen and (min-width: 321px) and (max-width: 479px) {
+  .softek-icon-box-wrapper.icon-box-about-one {
+    margin: 0 0 10px 0;
+  }
+}
+
 .softek-icon-box-wrapper.icon-box-about-one .softek-icon-box-icon {
   width: 15%;
   display: inline-block;
