@@ -453,7 +453,6 @@
   background: #fff;
   width: 200px;
   position: absolute;
-  pointer-events: none;
   flex-direction: column;
   transition: 0.3s ease-out;
   transition-delay: 0.1s;
