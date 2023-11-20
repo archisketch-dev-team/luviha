@@ -160,9 +160,6 @@ input[type='email']:focus {
   outline: 0;
   border-color: #696969;
 }
-.row-fluid-wrapper {
-  margin: -15px;
-}
 .error-message {
   color: #ef6b51 !important;
   margin-top: 0.35rem;
