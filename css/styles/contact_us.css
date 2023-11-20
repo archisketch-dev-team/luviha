@@ -168,6 +168,11 @@ input[type='email']:focus {
   margin-top: 0.35rem;
   font-size: 0.875rem;
 }
+#messageError:last-child {
+  margin-top: 30px;
+  margin-bottom: 11px;
+}
+
 #btn-success {
   position: relative;
   background: linear-gradient(to right, #ff3834 0%, #ff7133 100%);

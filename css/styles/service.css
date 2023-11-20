@@ -21,18 +21,10 @@
   width: auto;
   padding-bottom: 0;
 }
-.service-one-icon-box-parent-five,
-.service-one-icon-box-parent-six,
-.service-one-icon-box-parent-seven,
-.service-one-icon-box-parent-eight {
-  padding: 0 15px 30px 15px;
-}
 .service-one-img-three {
   padding: 0 15px;
 }
-.service-one-text-four {
-  padding: 50px 15px 0 15px;
-}
+
 .body-container--contact .dnd-column {
   border-radius: 4px;
 }
@@ -267,17 +259,12 @@
   width: auto;
   padding-bottom: 0;
 }
-.service-one-icon-box-parent-five,
-.service-one-icon-box-parent-six,
-.service-one-icon-box-parent-seven,
-.service-one-icon-box-parent-eight {
-  padding: 0 15px 30px 15px;
-}
+
 .service-one-img-three {
   padding: 0 15px;
 }
 .service-one-text-four {
-  padding: 50px 0px 0 0px;
+  padding: 0px 15px 0 15px;
 }
 .service-one-contact-form {
   padding: 0 15px;
@@ -286,7 +273,9 @@
 /* Services form */
 .form-group {
   padding: 0 !important;
+  margin: 0 !important;
 }
+
 .form-control {
   background: #fafafa !important;
 }
@@ -327,7 +316,6 @@
   width: 100%;
   height: 55px !important;
   line-height: 55px;
-  margin-bottom: 10px;
   color: #696969;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -365,7 +353,12 @@
   box-shadow: inherit !important;
 }
 .error-message {
+  font-size: 0.875rem;
   display: block;
-  margin: 0.7rem 0;
   color: #ef6b51;
+  margin: 21px 0 11px 0;
+}
+#messageError:last-child {
+  margin-top: 28px;
+  margin-bottom: 11px;
 }
