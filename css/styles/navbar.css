@@ -832,6 +832,7 @@ div.bsnav-mobile .navbar-nav .nav-item .navbar-nav li a {
 }
 div.bsnav-mobile.in .navbar {
   width: 100%;
+  padding: 15px;
 }
 .navbar-toggler {
   float: right;

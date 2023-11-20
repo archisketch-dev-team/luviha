@@ -1,12 +1,12 @@
-function showLoading() {
-  var loadingContainer = document.getElementById('Loading')
-  loadingContainer.style.display = 'flex'
-}
+// function showLoading() {
+//   var loadingContainer = document.getElementById('Loading')
+//   loadingContainer.style.display = 'flex'
+// }
 
-function hideLoading() {
-  var loadingContainer = document.getElementById('Loading')
-  loadingContainer.style.display = 'none'
-}
+// function hideLoading() {
+//   var loadingContainer = document.getElementById('Loading')
+//   loadingContainer.style.display = 'none'
+// }
 
 function checkLoading() {
   console.log('sss')
@@ -21,35 +21,35 @@ function checkLoading() {
 
 var isLoading = false
 
-function navigateTo(targetPage) {
-  showLoading()
-  isLoading = true
+// function navigateTo(targetPage) {
+//   showLoading()
+//   isLoading = true
 
-  setTimeout(function () {
-    window.location.href = targetPage
-  }, 2000)
-}
+//   setTimeout(function () {
+//     window.location.href = targetPage
+//   }, 1000)
+// }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var menuItemsNav = document.querySelectorAll('#transfer_page')
+  // var menuItemsNav = document.querySelectorAll('#transfer_page')
 
-  menuItemsNav.forEach(function (menuItem) {
-    menuItem.addEventListener('click', function (event) {
-      event.preventDefault()
+  // menuItemsNav.forEach(function (menuItem) {
+  //   menuItem.addEventListener('click', function (event) {
+  //     event.preventDefault()
 
-      if (!isLoading) {
-        var targetPage = this.getAttribute('href')
-        navigateTo(targetPage)
-      }
-    })
-  })
+  //     if (!isLoading) {
+  //       var targetPage = this.getAttribute('href')
+  //       navigateTo(targetPage)
+  //     }
+  //   })
+  // })
 
-  window.addEventListener('load', function () {
-    if (isLoading) {
-      hideLoading()
-      isLoading = false
-    }
-  })
+  // window.addEventListener('load', function () {
+  //   if (isLoading) {
+  //     hideLoading()
+  //     isLoading = false
+  //   }
+  // })
 
   window.addEventListener('load', checkLoading)
 })
