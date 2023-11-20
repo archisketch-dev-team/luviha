@@ -8,9 +8,6 @@
   -webkit-transition: all 0.3s ease-in-out;
   transform: translate3d(0);
 }
-.faq_title {
-  padding-left: 15px;
-}
 .about-one-text-four-right {
   width: 80%;
 }
@@ -106,12 +103,6 @@
   }
 }
 
-div .softek-faq {
-  border: 0px none;
-  width: auto;
-  padding: 0 15px;
-}
-
 .softek-faq-title h6 {
   color: #000;
 }
@@ -201,6 +192,24 @@ div .softek-faq {
 
 .softek-faq-title[aria-expanded='true'] .softek-faq-icon {
   transform: rotate(90deg);
+}
+@media (max-width: 1139px) and (min-width: 480px) {
+  .swiper-wrapper {
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+  }
+  .rt-professionals-team {
+    width: 100% !important;
+  }
+}
+@media (max-width: 480px) {
+  .swiper-wrapper {
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+  }
+  .rt-professionals-team {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 480px) {
