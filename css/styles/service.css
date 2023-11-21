@@ -10,10 +10,7 @@
 .service-one-text-three {
   padding: 50px 15px;
 }
-.service-one-text-three h3 {
-  width: auto;
-  padding-bottom: 0;
-}
+
 .service-one-img-three {
   padding: 0 15px;
 }
@@ -233,10 +230,6 @@
 
 .service-one-text-three {
   padding: 50px 15px;
-}
-.service-one-text-three h3 {
-  width: auto;
-  padding-bottom: 0;
 }
 
 .service-one-img-three {
