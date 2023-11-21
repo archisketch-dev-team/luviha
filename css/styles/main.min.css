@@ -2406,9 +2406,6 @@ form textarea {
   .service-one-icon-box-parent-four .softek-icon-box-icon {
     width: auto;
   }
-  .service-one-img-one img {
-    width: 100%;
-  }
   .service-one-img-two img {
     width: 100%;
   }
@@ -3955,14 +3952,6 @@ form textarea {
   .landing-text-four-center {
     width: 100%;
     margin: 0 auto;
-  }
-}
-.swiper-wrapper {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: 30px;
-  .rt-professionals-team {
-    width: 263px;
   }
 }
 .btn-success {
