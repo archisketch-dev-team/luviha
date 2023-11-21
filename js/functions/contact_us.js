@@ -29,7 +29,7 @@ function submitForm() {
 
         if (elements[i].type === 'tel' && !isValidPhone(elements[i].value)) {
           elements[i].classList.add('error')
-          errorElement.innerText = 'Invalid phone number'
+          errorElement.innerText = 'Must contain only numbers, +()-. and x.'
           elements[i].style.borderColor = '#ef6b51'
         }
       }
@@ -66,7 +66,7 @@ function handleInputChange(input) {
     }
     if (input.type === 'tel' && !isValidPhone(input.value)) {
       input.classList.add('error')
-      errorMessage.innerText = 'Invalid phone number'
+      errorMessage.innerText = 'Must contain only numbers, +()-. and x.'
       input.style.borderColor = 'red'
     }
   }
@@ -78,6 +78,6 @@ function isValidEmail(email) {
 }
 
 function isValidPhone(phone) {
-  var phoneRegex = /^\+?[0-9]+$/
+  var phoneRegex = /^\+?[0-9]{10,}$/
   return phoneRegex.test(phone)
 }
