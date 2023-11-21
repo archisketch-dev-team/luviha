@@ -7,9 +7,6 @@
   margin: 10px 15px;
 }
 
-.service-one-img-two {
-  padding: 0 15px;
-}
 .service-one-text-three {
   padding: 50px 15px;
 }
@@ -32,13 +29,6 @@
 .service-one-icon-box-parent-three .softek-icon-box-icon,
 .service-one-icon-box-parent-four .softek-icon-box-icon {
   width: auto;
-}
-
-.service-one-img-two img {
-  width: 100%;
-}
-.service-one-img-three img {
-  width: 100%;
 }
 .service-one-icon-box-five .softek-icon-box-icon,
 .service-one-icon-box-six .softek-icon-box-icon,
@@ -236,9 +226,6 @@
   margin: 0 0px 18px 0;
 }
 
-.service-one-img-two {
-  padding: 0 15px;
-}
 .service-one-text-three {
   padding: 50px 15px;
 }
