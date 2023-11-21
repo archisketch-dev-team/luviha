@@ -78,6 +78,6 @@ function isValidEmail(email) {
 }
 
 function isValidPhone(phone) {
-  var phoneRegex = /^[0-9]+$/
+  var phoneRegex = /^\+?[0-9]+$/
   return phoneRegex.test(phone)
 }
