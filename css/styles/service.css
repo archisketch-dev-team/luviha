@@ -163,6 +163,11 @@
 .service-one-text-four h3 {
   text-align: left;
 }
+@media (max-width: 767px) {
+  .form_service {
+    padding: 0 15px;
+  }
+}
 .service-one-contact-form input[type='text'],
 .service-one-contact-form input[type='email'],
 .service-one-contact-form input[type='tel'] {
