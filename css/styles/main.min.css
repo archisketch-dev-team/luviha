@@ -4008,7 +4008,11 @@ form textarea {
   font-weight: 700;
 }
 
-.error-message {
+#hs_form_target_footer_subscribe_form {
+  margin-bottom: 1.4rem;
+}
+
+.error-message_footer {
   color: #ef6b51;
   margin-top: 0.35rem;
   font-size: 0.875rem;
