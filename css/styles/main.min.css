@@ -2103,6 +2103,11 @@ form textarea {
     width: 100%;
   }
 }
+.service-one-text-three h3 {
+  width: 46%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .softek-progress-bar {
     padding: 0 15px;
